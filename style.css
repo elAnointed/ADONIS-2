@@ -68,10 +68,40 @@ th{
     text-align: left;
 }
 
+
 /* screen sizes 768px and below */
-@media (max-width:768px) {
-    .main{
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 768px) {
+   .main{
+    flex-direction: column;
+   }
+
+   .sidebar{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+   }
+
+   .cards{
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 20px;
+   }
+
+   .content{
+    padding: 15px;
+   }
+
+   .table-section{
+    overflow-x: auto;
+    width: 100%;
+   }
+
+   .table{
+    font-size: 13px;
+    min-width: 600px;
+   }
+
+   th, td {
+    padding: 6px;
+   }
 }
